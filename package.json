@@ -9,6 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@mtproto/core": "6.3.0"
+    "@mtproto/core": "6.3.0",
+    "dotenv": "^17.2.3",
+    "fs-extra": "^11.3.2",
+    "grammy": "^1.38.4"
   }
 }

@@ -1,9 +1,10 @@
-const config = {
-	api_id: '38093973',
-	api_hash: '20791fe7d8eed7e41ea886d33fd0f5d6',
-	phone: '+380989622544',
-	code: '82332',
-	password: 'Azqwt147rmLiftarion',
-}
+require('dotenv').config()
+const path = require('path')
 
-module.exports = config
+module.exports = {
+	api_id: Number(process.env.API_ID),
+	api_hash: process.env.API_HASH,
+	bot_token: process.env.BOT_TOKEN,
+	storageDir: path.join(__dirname, 'src/data'),
+	storagePath: path.join(__dirname, 'src/data/session.json'),
+}

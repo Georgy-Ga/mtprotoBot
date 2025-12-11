@@ -1,5 +1,5 @@
 const { code, phone, password } = require('../config')
-const api = require('./api')
+const api = require('./mtproto')
 
 async function getUser() {
 	try {
